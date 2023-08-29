@@ -13,9 +13,11 @@ from TCC_POO_Bruno import LadraoInteligente
 import time
 import pickle
 
-gens = [10000,100000,1000000,10000000,100000000]
+#gens = [10000,100000,1000000,10000000,100000000]
+#size = [4,6,8,10]
 
-size = [4,6,8,10]
+gens = [100000000]
+size = [8]
 
 timelimit = 10800
 
@@ -30,7 +32,7 @@ for g in gens:
         add = [s,g]
         
         treino = Treino(s)
-        #totaltime = treino.treino(eps,g,timelimit)
+        totaltime = treino.treino(eps,g,timelimit)
         
         count = 0
         
